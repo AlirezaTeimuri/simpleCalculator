@@ -2,11 +2,6 @@
 
 /*
 today is 04.03.2024 Monday
-let num = 42;
-let firstName = "Alireza";
-const isProgrammer = true;
-alert(firstName)
-console.log(firstName)
 */
 
 const resultElement = document.getElementById("result");
@@ -21,9 +16,6 @@ let action;
 
 const sum = Number(input1Element.value) + Number(input2Element.value);
 resultElement.textContent = sum;
-
-// console.log(resultElement.textContent)
-// console.log(typeof sum)
 
 plusBtn.onclick = function () {
   action = "+";
@@ -91,19 +83,9 @@ if (actionSymbol == "+") {
 } else {
     return num1 / num2
 }
-
-//   return actionSymbol == "+" ? num1 + num2 : num1 - num2;
 }
 
 submitBtn.onclick = function () {
   const result = computeNumbersWithAction(input1Element, input2Element, action);
   printResult(result);
-
-  //   if (action == "+") {
-  //     const sum = Number(input1Element.value) + Number(input2Element.value);
-  //     printResult(sum)
-  //   } else {
-  //     const sum = Number(input1Element.value) - Number(input2Element.value);
-  //     printResult(sum)
-  //   }
 };
